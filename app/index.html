@@ -1,0 +1,421 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Solomia Web Page</title>
+	<link rel="stylesheet" href="css/style.min.css">
+	<script src="https://kit.fontawesome.com/d3c2ee7e7a.js" crossorigin="anonymous"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&family=Open+Sans:wght@700&family=Roboto&display=swap" rel="stylesheet">
+	<script src="https://code.jquery.com/jquery-3.6.1.js" integrity="sha256-3zlB5s2uwoUzrXK3BT7AX3FyvojsraNFxCc2vC/7pNI=" crossorigin="anonymous"></script>
+</head>
+<body>
+	<div class="body">
+		<!-- Side bar -->
+		<div class="side_bar">
+			<!-- Logo -->
+			<div class="logo">
+				<div class="logo_block">
+					<img src="img/shape.png" alt="" class="logo_png">
+					<p class="logo_txt">kanto</p>
+				</div>
+			</div>
+			<!-- User Profile -->
+			<div class="user_profile">
+				<div class="user_profile_block">
+					<img src="img/avatar.png" alt="">
+					<div class="user_profile_txt">
+					<p class="user_profile_txt_up">Shah Yusuf Ahmed</p>
+					<p class="user_profile_txt_down">Graphics Designer</p>
+					</div>
+				</div>
+			</div>
+			<!-- Dashboard main -->
+			<div id="side_dashboard">
+				<div class="side_dashboard_btn">
+					<a href="#"><div class="btn_general">
+						<b>GENERAL</b>
+					</div></a>
+
+					<a href="#" id="dropdown"><div class="choosed_btn ">s</div><div class="dashboard_btn">
+						<img src="img/dashboard icon.png" alt="" class="dashboard_png">
+						<p class="dashboard_txt">Dashboard</p>
+					</div></a>
+
+					<div class="dashboard_list_block">
+						<ul class="dashboard_list">
+							<a href="#"><li class="dashboard_list_choose"><i class="fa-regular fa-circle choose1"></i>Dashboard 1</li></a>
+							<a href="#"><li class="dashboard_list_choose"><i class="fa-regular fa-circle choose2"></i>Dashboard 2</li></a>
+							<a href="#"><li class="dashboard_list_choose"><i class="fa-regular fa-circle choose3"></i>Dashboard 3</li></a>
+							<a href="#"><li class="dashboard_list_choose"><i class="fa-regular fa-circle choose4"></i>Comming Soon</li></a>
+						</ul>
+					</div>
+
+					<a href="#"><div class="layouts_btn">
+						<img src="img/layouts icon.png" alt="" class="Layouts_png">
+						<p class="layouts_txt">Layouts</p>
+					</div></a>
+
+					<a href="#"><div class="pages_btn ">
+						<img src="img/pages icon.png" alt="" class="pages_png">
+						<p class="pages_txt">Pages</p>
+					</div></a>
+
+					<a href="#"><div class="elements_btn">
+						<div class="choosed_btn">s</div>
+						<p class="elements_txt"><b>ELEMENTS</b></p>
+					</div></a>
+
+					<a href="#"><div class="elements_btn_choose ">
+						<img src="img/invoice.png" alt="" class="elements_png_choose">
+						<p class="elements_txt_choose">Invoice</p><div class="plus">+</div>
+					</div></a>
+
+					<a href="#"><div class="elements_btn_choose ">
+						<img src="img/charts.png" alt="" class="elements_png_choose">
+						<p class="elements_txt_choose">Charts</p>
+					</div></a>
+
+					<a href="#"><div class="elements_btn_choose ">
+						<img src="img/snippets.png" alt="" class="elements_png_choose">
+						<p class="elements_txt_choose">Snippets</p><div class="plus">+</div>
+					</div></a>
+
+					<a href="#"><div class="elements_btn_choose ">
+						<img src="img/UI Widgets.png" alt="" class="elements_png_choose">
+						<p class="elements_txt_choose">UI Widgets</p><div class="plus">+</div>
+					</div></a>
+
+					<a href="#"><div class="elements_btn_choose ">
+						<img src="img/offers.png" alt="" class="elements_png_choose">
+						<p class="elements_txt_choose">Offers</p>
+					</div></a>
+
+					<a href="#"><div class="elements_btn_choose ">
+						<img src="img/forms.png" alt="" class="elements_png_choose">
+						<p class="elements_txt_choose">Forms</p>
+					</div></a>
+
+					<a href="#"><div class="elements_btn_choose ">
+						<img src="img/plugin.png" alt="" class="elements_png_choose">
+						<p class="elements_txt_choose">Plugin</p><div class="plus">+</div>
+					</div></a>
+
+					<a href="#"><div class="elements_btn_choose ">
+						<img src="img/email.png" alt="" class="elements_png_choose">
+						<p class="elements_txt_choose">Email</p><div class="side_bar_number">10</div>
+					</div></a>
+
+					<a href="#"><div class="elements_btn_choose ">
+						<img src="img/message.png" alt="" class="elements_png_choose">
+						<p class="elements_txt_choose">Message</p><div class="side_bar_number">09</div>
+					</div></a>
+
+					<a href="#"><div class="elements_btn_choose ">
+						<img src="img/notification.png" alt="" class="elements_png_choose">
+						<p class="elements_txt_choose">Notification</p><div class="side_bar_number">11</div>
+					</div></a>
+				</div>
+			</div>
+		</div>
+
+		<div class="main">
+
+			<!-- Header -->
+			<div class="header">
+				<div class="sidebar_btn">
+					<a href="#" class="menu_icon"><img src="img/Menu icon.png" alt=""></a>
+				</div>
+
+				<div class="header_txt_map">
+					<a href="#"><b>Dashboard</b></a> / <a href="#">Home</a> / <a href="#">All Site Visit</a>
+				</div>
+
+				<div class="form-group">
+		            <div class="select-wrapper">
+		                <select name="select-category" id="" class="select">
+		                    <option value="1">English</option>
+		                    <option value="2">Ukrainian</option>
+		                    <option value="3">German</option>
+		                    <option value="4">Chinese</option>
+		                </select>
+		            </div>
+		        </div>
+
+				<div class="header_right">
+					<p class="header_right_txt">Reporting Period</p>
+					<div class="right_list_block">
+						<select name="list-right" id="" class="right_list">
+							<option value="1">Last 30 Day's</option>
+						</select>
+					</div>
+				</div>
+			</div>
+
+			<!-- Tables -->
+			<div id="content">
+				<div class="line">
+					<div class="tbl visitors_tbl">
+						<div class="visitors_tbl"><img src="img/visitors icon.png" alt="">
+							<br>
+							<button class="tbl_btn">Visitors</button>
+							<p><i class="fa-solid fa-arrow-up-long"></i>125K <span class="visitors_span">(50%)</span></p>
+						</div>
+					</div>
+					<div class="tbl new_order_tbl">
+						<div class="new_order_tbl">
+							<img src="img/order.png" alt="">
+							<br>
+							<button class="tbl_btn">New Order</button>
+							<p>3900K</p>
+						</div>
+					</div>
+					<div class="tbl sales_tbl">
+						<div class="sales_tbl">
+							<img src="img/sales.png" alt="">
+							<br>
+							<button class="tbl_btn">Sales</button>
+							<p>9000K</p>
+						</div>
+					</div>
+					<div class="tbl Shipping_tbl">
+						<div class="Shipping_tbl">
+							<img src="img/shipping.png" alt="">
+							<br>
+							<button class="tbl_btn">Shipping</button>
+							<p>888K</p>
+						</div>
+					</div>
+				</div>
+
+				<div class="line">
+					<div id="earning_box" class="b-g-color-fff shadow">
+						<div class="head-item">
+							<span><b>EARNING GRAPH OVERVIEW</b></span>
+							<div>
+								<img src="../img/refresh.png" alt="">
+								<img src="../img/down.png" alt="">
+								<img src="../img/cross.png" alt="">
+							</div>
+						</div>
+						<div class="any-content">
+							<div class="earning_form_control">
+							<canvas  id="earning_graph" width="40" height="10"></canvas>
+							<div class="line">
+								<div class="legend-t"><b>$12,000</b>Revenue</div>
+								<div class="legend-o"><b>$12,000</b>Order</div>
+								<div class="legend-r"><b>$12,000</b>Tax</div>
+								<div class="legend-s"><b>$12,000</b>Shipment</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+
+				<div class="line">
+					<div id="top_search_box" class="shadow">
+						<div class="head-item">
+							<span><b>TOP SERCH</b></span>
+							<div>
+								<img src="../img/refresh.png" alt="">
+								<img src="../img/down.png" alt="">
+								<img src="../img/cross.png" alt="">
+							</div>
+						</div>
+						<div class="any-content">
+							<div class="line">
+								<div class="number">01</div>
+								<div class="progres">
+									<img src="../img/01.png" alt="">
+									<div class="text_block">
+										<span>America</span>
+										<b>90%</b>
+									</div>
+								</div>
+							</div>
+							<div class="line">
+								<div class="number">02</div>
+								<div class="progres">
+									<img src="../img/02.png" alt="">
+									<div class="text_block">
+										<span>U.Kingdom</span>
+										<b>60%</b>
+									</div>
+								</div>
+							</div>
+							<div class="line">
+								<div class="number">03</div>
+								<div class="progres">
+									<img src="../img/03.png" alt="">
+									<div class="text_block">
+										<span>Bangladesh</span>
+										<b>18%</b>
+									</div>
+								</div>
+							</div>
+							<div class="line">
+								<div class="number">04</div>
+								<div class="progres">
+									<img src="../img/04.png" alt="">
+									<div class="text_block">
+										<span>Canada</span>
+										<b>80%</b>
+									</div>
+								</div>
+							</div>
+							<div class="line">
+								<div class="number">05</div>
+								<div class="progres">
+									<img src="../img/05.png" alt="">
+									<div class="text_block">
+										<span>Bische</span>
+										<b>70%</b>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div id="custom_box" class="shadow">
+						<div class="head-item">
+							<span><b>CUSTOM RETEING</b></span>
+							<div>
+								<img src="../img/refresh.png" alt="">
+								<img src="../img/down.png" alt="">
+								<img src="../img/cross.png" alt="">
+							</div>
+						</div>
+						<div class="any-content">
+							<div class="img_box">
+								<img src="../img/custom.png" alt="">
+							</div>
+							<ul>
+								<li> <span>The product is awesome</span> <b>20%</b> </li>
+								<li> <span> I am saisfied with this</span> <b>45%</b> </li>
+								<li><span>Not bad but good also</span> <b>30%</b> </li>
+								<li><span>Avarage product</span> <b>15%</b> </li>
+								<li><span>Not usefull at all</span> <b>25%</b></li>
+							</ul>
+						</div>
+					</div>
+				</div>
+
+				<div class="line">
+					<div id="recent-order_box" class="b-g-color-fff shadow">
+					<div class="head-item">
+						<span><b>RECENT ORDER</b></span>
+						<div>
+							<img src="../img/down.png" alt="">
+							<img src="../img/cross.png" alt="">
+						</div>
+					</div>
+					<div class="any-content">
+						<div class="line title">
+							<span>IMAGE</span>
+							<span class="p-n">PRODUCT NAME</span>
+							<span class="p-c">PRODUCT CODE</span>
+							<span class="status">STATUS</span>
+							<span class="p-o">PURCHASED ON</span>
+							<span class="price">PRICE</span>
+							<span class="quantity">QUANTITY</span>
+							<span class="tracking">TRACKING NO#</span>
+						</div>
+						<hr class="hr-color">
+						<div class="line">
+							<div class="img-box"><img src="../img/product1.png" alt=""></div>
+							<span class="p-n">Leisure Suit Casual</span>
+							<span class="p-c">3BSD59</span>
+							<span class="status prew b-g-color-0cc">Paid</span>
+							<span class="p-o">27 Sep 2015</span>
+							<span class="price">$99.00</span>
+							<span class="quantity">2</span>
+							<span class="tracking">#BG6R9853LP</span>
+						</div>
+						<div class="line">
+							<div class="img-box"><img src="../img/product2.png" alt=""></div>
+							<span class="p-n">Cotton Fleece Casual</span>
+							<span class="p-c">3BSD59</span>
+							<span class="status prew b-g-color-f1a80a">Pending</span>
+							<span class="p-o">27 Sep 2015</span>
+							<span class="price">$99.00</span>
+							<span class="quantity">2</span>
+							<span class="tracking">#BG6R9853LP</span>
+						</div>
+						<div class="line">
+							<div class="img-box"><img src="../img/product3.png" alt=""></div>
+							<span class="p-n">Formal Slim Fit Casual</span>
+							<span class="p-c">3BSD59</span>
+							<span class="status prew b-g-color-0cc">Paid</span>
+							<span class="p-o">27 Sep 2015</span>
+							<span class="price">$99.00</span>
+							<span class="quantity">2</span>
+							<span class="tracking">#BG6R9853LP</span>
+						</div>
+						<div class="line">
+							<div class="img-box"><img src="../img/product4.png" alt=""></div>
+							<span class="p-n">Velvet Patchwork</span>
+							<span class="p-c">3BSD59</span>
+							<span class="status prew b-g-color-f63">Failed</span>
+							<span class="p-o">27 Sep 2015</span>
+							<span class="price">$99.00</span>
+							<span class="quantity">2</span>
+							<span class="tracking">#BG6R9853LP</span>
+						</div>
+					</div>
+				</div>
+				</div>
+
+				<div class="line">
+					<div id="site-visits_box" class="b-g-color-fff shadow">
+						<div class="head-item">
+							<span><b>SITE VISITS</b></span>
+							<div>
+								<img src="../img/refresh.png" alt="">
+								<img src="../img/down.png" alt="">
+								<img src="../img/cross.png" alt="">
+							</div>
+						</div>
+						<div class="any-content">
+							<div class="siteVisitsFormControl">
+							<canvas id="site_visits" width="400" height="200"></canvas>
+						</div>
+							<div class="line">
+								<div class="lable">
+									<img src="../img/new-wisitors.png" alt="">
+									<div class="text">
+										New wisitors
+										<b>12,423</b>
+									</div>
+								</div>
+								<div class="lable">
+									<img src="../img/old-wisitors.png" alt="">
+									<div class="text">
+										Old wisitors
+										<b>12,423</b>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div id="region_box" class="b-g-color-fff shadow">
+						<div class="head-item">
+							<span><b>MARCETING CAMPING</b></span>
+							<div>
+								<img src="../img/refresh.png" alt="">
+								<img src="../img/down.png" alt="">
+								<img src="../img/cross.png" alt="">
+							</div>
+						</div>
+					<div class="any-content">
+						<div class="graph-form-control">
+							<canvas id="region" width="150" height="150"></canvas>
+						</div>
+					</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+	<script src="js/scripts.min.js"></script>
+</body>
+</html>
